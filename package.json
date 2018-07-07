@@ -1,0 +1,52 @@
+{
+  "name": "employeerecord",
+  "version": "1.0.0",
+  "description": "Add,Edit and Delete Notes",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack --mode development && webpack-dev-server --mode development --open",
+    "test":"jest --env=jsdom"
+  }, 
+  "jest": {
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(office-ui-fabric-react)/)"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "office-ui-fabric-react": "^6.25.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.3.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "html-webpack-plugin": "^3.0.6",
+    "jest": "^23.3.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
