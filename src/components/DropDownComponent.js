@@ -13,7 +13,7 @@ export const DropDownComponent = (props) =>{
           ariaLabel={props.label}
           options={props.data}
           onChanged={(e)=>{props.onChangeEvent(e)}}
-          key={props.key}
+          key={props.keys}
         /></div>
     </div>
 }
