@@ -31,7 +31,7 @@ class Home extends React.Component {
         this.state = {department: '', employeeID: '', keyDepartment: 1, keyEmployee: 1,loader:false}
         this.dropdownData = {...employeeList};
     }
-    
+
     onChangeEvent = (e) => {
         if(e.key === 'hr' || e.key === 'employee'){
             this.setState((preState)=>({
